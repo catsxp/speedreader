@@ -1,15 +1,15 @@
-# Brave SpeedReader
+# Catsxp SpeedReader
 
 **Private Prototype Repository**
 
-This is the beginning of a prototype SpeedReader implementation that is intended to work across different environments of Brave.
+This is the beginning of a prototype SpeedReader implementation that is intended to work across different environments of Catsxp.
 
 At a high level, SpeedReader:
 
 - Distills text-focused document content from a suitable HTML
 - Works on HTML documents before rendering them
 - Generates HTML output with no external styling or scripting
-- Content styled with Brave-designed themes
+- Content styled with Catsxp-designed themes
 
 
 ## Dependencies
