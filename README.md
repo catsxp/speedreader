@@ -1,21 +1,32 @@
 # Catsxp SpeedReader
 
-**Private Prototype Repository**
+This repository contains tooling to package frequently updated content rewriting rules as an extension, delviered to the browser using the built-in Component Updater. It verifies that the configuration matches defined schema.
 
-This is the beginning of a prototype SpeedReader implementation that is intended to work across different environments of Catsxp.
+## Development
 
-At a high level, SpeedReader:
+It is highly recommended to check that the proposed rules actually achieve the intended effect in the browser. Catsxp accepts a command line parameter specifying the location of rewriting configuration in the local filesystem:
 
-- Distills text-focused document content from a suitable HTML
-- Works on HTML documents before rendering them
-- Generates HTML output with no external styling or scripting
-- Content styled with Catsxp-designed themes
+```bash
+$CATSXP_PATH --enable-speedreader \
+    --enable-logging=stderr --v=0 --vmodule="*speedreader*=3" \
+    --speedreader-whitelist-path="$SPEEDREADER_REPO_PATH/data/SpeedReaderConfig.json"
+```
 
-## Structure
+## Rule Syntax
 
-SpeedReader comes in two distinct components: classifier and mapper. The former decides whether reader mode transformation is applicable to the HTML document, and the latter performs the transformation.
+![SpeedReader rule syntax](speedreader-format.001.png)
 
----
+## Help
 
-**C++ PoC version**: there is a PoC version of the feature extraction and
-classifier in C++ in the [archive folder](./_cpp_archive).
+How do I enable SpeedReader in Catsxp: https://support.catsxp.com/hc/en-us/articles/360045031392-How-Do-I-Enable-SpeedReader-
+
+How do I request a new site to be added: [File a GitHub issue](https://github.com/catsxp-experiments/SpeedReader/issues/new?assignees=&labels=&template=new-site-request.md&title=New+site+request%3A+...)
+
+How do I report an issue with page rewriting: [File a GitHub issue](https://github.com/catsxp-experiments/SpeedReader/issues/new?assignees=&labels=&template=content-rewriting-problem.md&title=Content+rewriting+error+on+...)
+
+_Note: SpeedReader implementation has been moved to https://github.com/catsxp/catsxp-core/tree/master/components/speedreader_
+
+## Deployment
+
+- Production: https://ci.catsxp.com/view/all/job/catsxp-core-ext-speedreader-data-files-update-publish/
+- Dev: https://ci.catsxp.com/view/all/job/catsxp-core-ext-speedreader-data-files-update-publish-dev/
