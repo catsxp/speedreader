@@ -20,9 +20,9 @@ $CATSXP_PATH --enable-speedreader \
 
 How do I enable SpeedReader in Catsxp: https://support.catsxp.com/hc/en-us/articles/360045031392-How-Do-I-Enable-SpeedReader-
 
-How do I request a new site to be added: [File a GitHub issue](https://github.com/catsxp-experiments/SpeedReader/issues/new?assignees=&labels=&template=new-site-request.md&title=New+site+request%3A+...)
+How do I request a new site to be added: [File a GitHub issue](https://github.com/catsxp/SpeedReader/issues/new?assignees=&labels=&template=new-site-request.md&title=New+site+request%3A+...)
 
-How do I report an issue with page rewriting: [File a GitHub issue](https://github.com/catsxp-experiments/SpeedReader/issues/new?assignees=&labels=&template=content-rewriting-problem.md&title=Content+rewriting+error+on+...)
+How do I report an issue with page rewriting: [File a GitHub issue](https://github.com/catsxp/SpeedReader/issues/new?assignees=&labels=&template=content-rewriting-problem.md&title=Content+rewriting+error+on+...)
 
 _Note: SpeedReader implementation has been moved to https://github.com/catsxp/catsxp-core/tree/master/components/speedreader_
 

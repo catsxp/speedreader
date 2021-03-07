@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/catsxp-experiments/SpeedReader.git"
+    "url": "git+https://github.com/catsxp/SpeedReader.git"
   },
   "author": "Andrius Aucinas aaucinas@catsxp.com",
   "license": "MPL-2.0",
   "bugs": {
-    "url": "https://github.com/catsxp-experiments/SpeedReader/issues"
+    "url": "https://github.com/catsxp/SpeedReader/issues"
   },
-  "homepage": "https://github.com/catsxp-experiments/SpeedReader#readme",
+  "homepage": "https://github.com/catsxp/SpeedReader#readme",
   "dependencies": {
     "@types/node": "^13.11.0",
     "@types/node-gzip": "^1.1.0",

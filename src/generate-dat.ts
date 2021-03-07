@@ -6,7 +6,7 @@ import util from 'util'
 import {gzip} from 'node-gzip'
 import request from 'request'
 
-const configURL = "https://raw.githubusercontent.com/catsxp-experiments/SpeedReader/master/"
+const configURL = "https://raw.githubusercontent.com/catsxp/SpeedReader/master/"
 const configFile = "data/SpeedReaderConfig.json"
 const outputFile = "data/speedreader-updater.dat"
 
